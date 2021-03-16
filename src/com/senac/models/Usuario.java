@@ -2,6 +2,10 @@ package com.senac.models;
 
 public class Usuario {
 
+    int idade3;
+    boolean nacionalidade;
+    boolean disponibilidade;
+
     public boolean verficarIdade(int idade){
 
         if(idade >=18){
@@ -39,11 +43,10 @@ public class Usuario {
                 if(verificarDisponibilidade(disponibilidade)){
                     System.out.println("PARABENS VOCE CADASTROU");
                     return true;
-                }else {
-                    return false;
                 }
             }
         }
+        System.out.println("PARABENS VOCE não CADASTROU");
         return false;
     }
 }

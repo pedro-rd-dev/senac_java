@@ -1,9 +1,13 @@
 package com.senac;
 
+import com.senac.models.Usuario;
+
 public class Main {
 
     public static void main(String[] args) {
 
-        System.out.println("teste");
+        Usuario usuario = new Usuario();
+        usuario.verficarIdade(20);
+
     }
 }

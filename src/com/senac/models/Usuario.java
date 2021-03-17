@@ -2,9 +2,23 @@ package com.senac.models;
 
 public class Usuario {
 
-    int idade3;
-    boolean nacionalidade;
-    boolean disponibilidade;
+    private int idade;
+    private boolean nacionalidade;
+    private boolean disponibilidade;
+
+    public Usuario() {
+    }
+
+    public Usuario(int idade, boolean nacionalidade, boolean disponibilidade) {
+        this.idade = idade;
+        this.nacionalidade = nacionalidade;
+        this.disponibilidade = disponibilidade;
+    }
+
+    public Usuario(int idade, boolean nacionalidade) {
+        this.idade = idade;
+        this.nacionalidade = nacionalidade;
+    }
 
     public boolean verficarIdade(int idade){
 
@@ -48,5 +62,29 @@ public class Usuario {
         }
         System.out.println("PARABENS VOCE não CADASTROU");
         return false;
+    }
+
+    public int getIdade() {
+        return idade + 10;
+    }
+
+    public void setIdade(int idade) {
+        this.idade = idade;
+    }
+
+    public boolean getNacionalidade() {
+        return nacionalidade;
+    }
+
+    public void setNacionalidade(boolean nacionalidade) {
+        this.nacionalidade = nacionalidade;
+    }
+
+    public boolean getDisponibilidade() {
+        return disponibilidade;
+    }
+
+    public void setDisponibilidade(boolean disponibilidade) {
+        this.disponibilidade = disponibilidade;
     }
 }
